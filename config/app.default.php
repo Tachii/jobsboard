@@ -221,8 +221,8 @@ return [
             //'port' => 'nonstandard_port_number',
             //'username' => 'root',
 			'username' => 'b2381a95085af7',
-            //'password' => '74ad3df5',
-			'password' => '',
+            'password' => '74ad3df5',
+			//'password' => '',
             //'database' => 'jobfinds',123
 			'database' => 'heroku_4f17cc0cb7aa059',
             'encoding' => 'utf8',
