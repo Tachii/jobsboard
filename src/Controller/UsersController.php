@@ -29,8 +29,7 @@ class UsersController extends AppController
 		$categories = $getCategories->find('all');
 		$this->set('categories',$categories);
 		
-    	$this->set('title', 'Registration');
-		
+		$this->set('title', 'Jobs Board | Registration');
 		
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
@@ -46,7 +45,7 @@ class UsersController extends AppController
 	
 	public function login()
 	{
-		$this->set('title', 'Logout');
+		$this->set('title', 'Jobs Board | Login');
 	    if ($this->request->is('post')) {
 	        $user = $this->Auth->identify();
 	        if ($user) {
