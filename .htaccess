@@ -2,4 +2,9 @@
     RewriteEngine on
     RewriteRule    ^$    webroot/    [L]
     RewriteRule    (.*) webroot/$1    [L]
+	<FilesMatch "\.(ttf|otf|eot|svg|woff)$">
+		<IfModule mod_headers.c>
+			Header set Access-Control-Allow-Origin "*"
+		</IfModule>
+	</FilesMatch>
 </IfModule>
