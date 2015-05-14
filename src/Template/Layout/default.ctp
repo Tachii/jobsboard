@@ -40,13 +40,13 @@
 		
 		<!-- Menu Horizontal -->
 		<ul class="menu">
-		<li <?php echo ($this->request->here == '/jobsfind/' || $this->request->here == '/jobsfind/jobs')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>"><i class="fa fa-home"> </i> Home</a></li>
-		<li <?php echo ($this->request->here == '/jobsfind/jobs/browse')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>jobs/browse"><i class="fa fa-search"> </i> Browse Jobs</a></li>
+		<li <?php echo ($this->request->here == '' || $this->request->here == 'jobs')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>"><i class="fa fa-home"> </i> Home</a></li>
+		<li <?php echo ($this->request->here == 'jobs/browse')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>jobs/browse"><i class="fa fa-search"> </i> Browse Jobs</a></li>
 		<?php if(!isset($UserData)) : ?>
-			<li <?php echo ($this->request->here == '/jobsfind/users/register')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/register"><i class="fa fa-user"> </i> Register</a></li>
-			<li <?php echo ($this->request->here == '/jobsfind/users/login')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/login"><i class="fa fa-key"> </i> Login</a></li>
+			<li <?php echo ($this->request->here == 'users/register')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/register"><i class="fa fa-user"> </i> Register</a></li>
+			<li <?php echo ($this->request->here == 'users/login')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/login"><i class="fa fa-key"> </i> Login</a></li>
 		<?php else : ?>
-			<li <?php echo ($this->request->here == '/jobsfind/users/logout')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/logout"><i class="fa fa-key"> </i> Logout</a></li>
+			<li <?php echo ($this->request->here == 'users/logout')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/logout"><i class="fa fa-key"> </i> Logout</a></li>
 		<?php endif ; ?>
 		</ul>
 	</div>
