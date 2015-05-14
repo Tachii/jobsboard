@@ -9,7 +9,7 @@
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('kickstart') ?>
-    <?= $this->Html->css('font-awesome') ?>
+    <?= $this->Html->css('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css') ?>
 	<?= $this->Html->css('style') ?>
 	<?= $this->Html->script('jquery') ?>
 	<?= $this->Html->script('kickstart') ?>
