@@ -58,5 +58,6 @@ class AppController extends Controller
 	public function beforeRender(Event $event)
     {
         $this->set('UserData', $this->Auth->user());
+		$this->set('base_url', 'http://'.$_SERVER['SERVER_NAME'].('/'));
     }
 }
