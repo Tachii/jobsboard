@@ -163,7 +163,7 @@ class JobsController extends AppController
 		$this->set('job', $job);
 		
 		//Set Title
-		$this->set('title', $job->title);
+		$this->set('title', "Jobsboard | ".$job->title);
 	}
 	
 	
