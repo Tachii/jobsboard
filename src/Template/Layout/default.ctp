@@ -40,7 +40,7 @@
 		
 		<!-- Menu Horizontal -->
 		<ul class="menu">
-		<li <?php echo ($this->request->here == '' || $this->request->here == '/jobs')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>"><i class="fa fa-home"> </i> Home</a></li>
+		<li <?php echo ($this->request->here == '/' || $this->request->here == '/jobs')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>"><i class="fa fa-home"> </i> Home</a></li>
 		<li <?php echo ($this->request->here == '/jobs/browse')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>jobs/browse"><i class="fa fa-search"> </i> Browse Jobs</a></li>
 		<?php if(!isset($UserData)) : ?>
 			<li <?php echo ($this->request->here == '/users/register')? 'class="current"' : '' ?>><a href="<?php echo $this->request->webroot; ?>users/register"><i class="fa fa-user"> </i> Register</a></li>
