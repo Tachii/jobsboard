@@ -71,4 +71,3 @@
 </div> <!-- End Grid -->
 </body>
 </html>
-<?php var_dump($this->request->here) ?>
