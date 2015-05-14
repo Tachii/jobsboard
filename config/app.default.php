@@ -45,7 +45,7 @@ return [
         // 'baseUrl' => env('SCRIPT_NAME'),
         'fullBaseUrl' => false,
         'imageBaseUrl' => 'img/',
-        'cssBaseUrl' => 'css/',
+        'cssBaseUrl' => '',
         'jsBaseUrl' => 'js/',
         'paths' => [
             'plugins' => [ROOT . DS . 'plugins' . DS],
