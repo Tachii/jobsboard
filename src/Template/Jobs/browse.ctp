@@ -24,5 +24,6 @@
 	<?php endforeach; ?>
 </ul>
 </div>
+<br /><br /><br /><br />
 <?php endif ?>
 <?php if(!isset($job)) echo "<p>Sorry, no jobs were found.</p>"; ?>
