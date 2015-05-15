@@ -117,7 +117,7 @@ class JobsController extends AppController
 		$options = array(
 			'order' => array('jobs.created'=>'desc'),
 			'conditions' => $conditions,
-			'limit' => 8
+			'limit' => 20
 		);
 		
     	//Get Jobs info
